@@ -1,4 +1,5 @@
 import time
+import sys
 
 tupleExample = ('Savith', 123, 88.88)
 dictExample = {'name':'Savith', 'address':'123 Blue street'}
@@ -47,4 +48,7 @@ print ("Removed the EOF comment")
 
 #added line from codenvy IDE
 
+strInput = input("enter something :")
+print(strInput)
 
+print("last instruction in the program.")
