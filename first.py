@@ -48,7 +48,17 @@ print ("Removed the EOF comment")
 
 #added line from codenvy IDE
 
-strInput = input("enter something :")
-print(strInput)
+#
+#strInput = input("enter something :")
+#print(strInput)
+
+
+def firstFunction():
+    print("statement within firstFunction()")
+    print("second statement from within firstFunction()")
+print("statement right after firstFunction()")
+
+
+firstFunction()
 
 print("last instruction in the program.")
