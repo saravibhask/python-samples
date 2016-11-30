@@ -1,5 +1,4 @@
 import time
-import sys
 
 tupleExample = ('Savith', 123, 88.88)
 dictExample = {'name':'Savith', 'address':'123 Blue street'}
@@ -51,6 +50,20 @@ print("Editing from personal laptop - local IDE (sublime)")
 pi = 3.14
 radius = 5
 result = float(4/3*pi*radius**3)
-print('Volume of a sphere of radius ', radius, ', is :', result)
+print('Volume of a sphere of radius %(rad)d is %(res)f' %{'rad':radius, 'res':result})
+
+print('{:+<30}'.format('Savith'))
+print('{:+^30}'.format('Savith'))
+print('{:+>30}'.format('Savith'))
+
+strTest = "       test:string        "
+
+print(strTest.lstrip())
+print(strTest.rstrip())
+print(strTest.strip())
+
+print(strTest.partition(':'))
+
+print("Savith".rjust(30,'+'))
 
 print("Last instruction in the program.")
