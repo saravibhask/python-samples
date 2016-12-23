@@ -1,4 +1,5 @@
 import time
+import fibonacci
 
 tupleExample = ('Savith', 123, 88.88)
 dictExample = {'name':'Savith', 'address':'123 Blue street'}
@@ -70,5 +71,7 @@ print(strTest.strip())
 print(strTest.partition(':'))
 
 print("Savith".rjust(30,'+'))
+
+fibonacci.fib(100)
 
 print("Last instruction in the program.")
