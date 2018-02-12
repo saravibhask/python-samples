@@ -1,5 +1,6 @@
 import time
 import fibonacci
+import pprint
 
 tupleExample = ('Savith', 123, 88.88)
 dictExample = {'name':'Savith', 'address':'123 Blue street'}
@@ -28,15 +29,22 @@ Test comment block line 2
 
 dictExample = {'Fname':'Savith', 'Lname':'Kumar', 'Address Line 1':'123 Blue St', 'City':'Green City', 'Zip':'12345'}
 
+print('Print using pprint()')
+pprint.pprint(dictExample)
+
+print('Print using regular print()')
 print(dictExample)
 
 for x in dictExample :
-    print(x, ' : ', dictExample[x])
+	print(x, ' : ', dictExample[x])
+
+for i in dictExample.items():
+	print(i)
 
 listExample = ['abc', 123, 45.67]
 
 for x in listExample :
-    print(x)
+	print(x)
 
 tupleExample = ('xyz', 456, 89.01)
 
@@ -45,11 +53,31 @@ print(time.strftime("%m/%d/%Y"))
 print("Removed the EOF comment")
 
 def firstFunction():
-    print("Statement within firstFunction()")
-    print("Second statement from within firstFunction()")
+	print("Statement within firstFunction()")
+	print("Second statement from within firstFunction()")
 print("Statement right after firstFunction()")
 
+
+def sumOfSeries(a, d, n):
+	sumSeries = n*((2*a)+((n-1)*d))/2
+	return sumSeries;
+
+
+def printSeries(a, d, n):
+	listSeries = []
+	for x in range(1, n):
+		listSeries.append(a)
+		#print(str(a)  + ',', sep=',')
+		a = a + d
+	print(listSeries)
+
 firstFunction()
+
+print("Before calling sumOfSeries()")
+sos = sumOfSeries(1,3,50)
+print(sos)
+printSeries(1,3,50)
+print("After calling sumOfSeries()")
 
 print("Editing from personal laptop - local IDE (sublime)")
 
@@ -91,5 +119,21 @@ elif a == 0:
 else:
 	print('a is unknown or "None"')
 
+
+def spam():
+	eggs = 99
+	bacon()
+	print(eggs)
+
+def bacon():
+	eggs = 0
+
+spam()
+
+
+myList = ['a', 'b', 'c', 'd', 'e']
+print(myList[int(int('3' * 2) / 11)])
+
+print("Inserting new statement to test GIT integration from Eclipse-Oxygen")
 
 print("Last instruction in the program.")
