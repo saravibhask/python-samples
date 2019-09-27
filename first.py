@@ -60,7 +60,7 @@ print("Statement right after firstFunction()")
 
 def sumOfSeries(a, d, n):
 	sumSeries = n*((2*a)+((n-1)*d))/2
-	return sumSeries;
+	return sumSeries
 
 
 def printSeries(a, d, n):
@@ -135,5 +135,7 @@ myList = ['a', 'b', 'c', 'd', 'e']
 print(myList[int(int('3' * 2) / 11)])
 
 print("Inserting new statement to test GIT integration from Eclipse-Oxygen")
+
+print("Inserting new statement in VScode on mac. -- testing Git integration")
 
 print("Last instruction in the program.")
